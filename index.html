@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://*.tile.openstreetmap.org https://tile.openstreetmap.org; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#0b2545">
+<title>Smart Navigation – Hệ thống dẫn đường số</title>
+<link rel="stylesheet" href="lib/leaflet.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <aside id="side">
+    <header>
+      <div class="brand"><span class="logo">⌖</span><div><h1>Smart Navigation</h1><p id="sub"></p></div></div>
+      <div class="tools">
+        <div class="chips" id="chips"></div>
+        <select id="ap" aria-label="Con em học tại ấp"></select>
+      </div>
+      <p class="priv" id="priv" hidden></p>
+    </header>
+    <div id="view" aria-live="polite"></div>
+  </aside>
+  <div id="map" role="application" aria-label="Bản đồ các trụ sở"></div>
+</div>
+<script src="lib/leaflet.js"></script>
+<script src="du-lieu.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
